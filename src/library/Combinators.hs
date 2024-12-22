@@ -3,11 +3,11 @@ module Combinators where
 import Control.Applicative
 import Control.Monad
 import Control.Monad.State.Strict
-import Data.Enum
 import Data.Foldable
 import Data.Function
 import Data.Int
 import Data.Traversable
+import GHC.Enum
 
 -- * Alternation
 
