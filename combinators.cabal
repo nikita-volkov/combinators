@@ -1,6 +1,6 @@
 cabal-version: 3.0
 name: combinators
-version: 0.1
+version: 0
 synopsis: Collection of combinators over standard typeclasses
 homepage: https://github.com/nikita-volkov/combinators
 bug-reports: https://github.com/nikita-volkov/combinators/issues
