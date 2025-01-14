@@ -41,7 +41,7 @@ alternateMapM mapper = foldr cons empty
 -- |
 -- Indexed version of 'forM'.
 {-# INLINE iforM #-}
-iforM :: (Monad m, Traversable f) => f a -> (Int -> a -> m b) -> m (f b)
+iforM :: (Traversable f, Monad m) => f a -> (Int -> a -> m b) -> m (f b)
 iforM collection f =
   collection
     & traverse
