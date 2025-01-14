@@ -52,7 +52,7 @@ intercalate = flip intercalateMap id
 -- |
 -- 'intercalate' extended with ability to map the wrapped value.
 {-# INLINE intercalateMap #-}
-intercalateMap :: (Monoid m, Foldable f) => m -> (a -> m) -> f a -> m
+intercalateMap :: (Foldable f, Monoid m) => m -> (a -> m) -> f a -> m
 intercalateMap separator proj =
   fst
     . foldl'
