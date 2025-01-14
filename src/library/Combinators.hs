@@ -77,3 +77,9 @@ iforM collection f =
           lift (f i item)
       )
     & flip evalStateT 0
+
+-- |
+-- Indexed version of 'traverse'.
+{-# INLINE itraverse #-}
+itraverse :: (Traversable f, Monad m) => (Int -> a -> m b) -> f a -> m (f b)
+itraverse = flip iforM
