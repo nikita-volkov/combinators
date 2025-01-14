@@ -1,6 +1,6 @@
 cabal-version: 3.0
 name: combinators
-version: 0.1
+version: 0.1.1
 synopsis: Collection of combinators over standard typeclasses
 homepage: https://github.com/nikita-volkov/combinators
 bug-reports: https://github.com/nikita-volkov/combinators/issues
@@ -12,7 +12,7 @@ license-file: LICENSE
 
 source-repository head
   type: git
-  location: git://github.com/nikita-volkov/combinators.git
+  location: https://github.com/nikita-volkov/combinators
 
 common base
   default-language: Haskell2010
